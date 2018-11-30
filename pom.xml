@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation=" http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>de.grossh.vueonmeecrowave</groupId>
+    <artifactId>vue-on-meecrowave</artifactId>
+    <version>0.1-SNAPSHOT</version>
+
+    <packaging>pom</packaging>
+    <name>Vue on Meecrowave</name>
+    <description>Simple Vue application using Apache Meecrowave as backend.</description>
+
+    <modules>
+        <module>simple-vue</module>
+    </modules>
+
+    <properties>
+        <meecrowave.version>1.2.4</meecrowave.version>
+
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+        <slf4j.version>1.7.25</slf4j.version>
+        <log4j-api.version>2.11.0</log4j-api.version>
+
+        <jacoco.version>0.8.1</jacoco.version>
+        <pitest.version>1.4.0</pitest.version>
+        <pitest-junit5-plugin.version>0.5</pitest-junit5-plugin.version>
+
+        <junit4.version>4.12</junit4.version>
+    </properties>
+
+
+
+    <!-- Just to disable any accidential deployment to maven.central -->
+    <distributionManagement>
+        <repository>
+            <id>localhost</id>
+            <url>file://${basedir}/target/repo/</url>
+        </repository>
+        <snapshotRepository>
+            <id>localhost</id>
+            <url>file://${basedir}/target/snapshot-repo/</url>
+        </snapshotRepository>
+    </distributionManagement>
+</project>

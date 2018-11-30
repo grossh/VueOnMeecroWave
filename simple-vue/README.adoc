@@ -1,0 +1,6 @@
+= Simple Webpage delivery
+
+== Use Meecrowave as web container
+
+This project tries to use MeecroWave just as an web container. In the beginning no (or only trivial) Rest Services
+will be provided

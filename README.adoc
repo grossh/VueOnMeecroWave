@@ -1,0 +1,5 @@
+= Vue on Meecrowave
+
+This project is a learning environment for Vue using https://openwebbeans.apache.org/meecrowave/[Apache Meecrowave]
+for a simple backend.
+
