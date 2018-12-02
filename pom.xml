@@ -13,6 +13,7 @@
 
     <modules>
         <module>simple-vue</module>
+        <module>vue-on-npm</module>
     </modules>
 
     <properties>

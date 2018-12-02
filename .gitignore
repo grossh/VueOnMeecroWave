@@ -1,0 +1,10 @@
+
+vue-on-npm/node/
+
+\.idea/
+
+simple-vue/target/
+
+*.iml
+
+vue-on-npm/target/
