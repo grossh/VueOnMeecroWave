@@ -1,0 +1,21 @@
+<html lang="en">
+
+<head>
+    <title>Vue on Apache Meecrowave</title>
+</head>
+<body>
+<div id="app">
+    {{'hello world'}}<br/>
+    <button v-on:click="toast">Toast bread</button>
+</div>
+<script
+        src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.js">
+</script>
+<script>
+    new Vue({el:'#app', methods:{toast(){alert('Tosted!')}}})
+</script>
+
+<br/>
+<a href="/api/hello">Hello Restservice</a>
+</body>
+</html>
