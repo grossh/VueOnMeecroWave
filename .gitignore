@@ -8,3 +8,5 @@ simple-vue/target/
 *.iml
 
 vue-on-npm/target/
+
+vue-on-npm/src/main/frontend/node_modules/
